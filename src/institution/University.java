@@ -23,11 +23,12 @@ public class University {
     public void getStudents() {
     for(Student item: students){
         System.out.println(item.getName());
+        //System.out.print(item.getKnowledge());
     }}
     
-    /*public ArrayList<Student> getStudentsList() {
+    public ArrayList<Student> getStudentsList() {
     	return students;
-    }*/
+    }
     public Student getStudent(int i) {
     	if(i>=0 && i<students.size()) 
     	return students.get(i);
@@ -57,4 +58,13 @@ public class University {
     	student.setKnowledge(know);
 		students.add(student);
 }
+    public double getAvarageLevel() {
+    	float ava = 0;
+    	if (students.size()!=0) {
+        for (Student s: students){
+            ava += s.getKnowledge();
+        }
+        ava /= students.size(); }
+        return ava;
+    }
 }

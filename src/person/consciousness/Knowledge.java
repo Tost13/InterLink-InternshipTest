@@ -2,7 +2,7 @@ package person.consciousness;
 
 public class Knowledge {
 	int level;
-	
+		
 	public Knowledge() {
 		level = 0;
 	}
@@ -10,8 +10,9 @@ public class Knowledge {
         return this.level;
         }
     public void setLevel(int level){
-        if(level>=0 ||level<=5) {
+        if(level>0 ||level<=5) {
         	this.level = level;
+        	
         }
         else {
         	this.level = 0;
@@ -23,7 +24,6 @@ public class Knowledge {
     }
     public Knowledge(int level) {
     	this.level=level;
-        
-    }
+        }
     
 }

@@ -23,4 +23,8 @@ public class Student {
     public void setKnowledge() {
     	this.knowledge.setLevel();
     }
+    public int getKnowledge() {
+    	
+		return knowledge.getLevel();
+    }
 }

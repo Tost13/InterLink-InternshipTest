@@ -10,7 +10,7 @@ public class Knowledge {
         return this.level;
         }
     public void setLevel(int level){
-        if(level<0 ||level>=5) {
+        if(level>=0 ||level<=5) {
         	this.level = level;
         }
         else {

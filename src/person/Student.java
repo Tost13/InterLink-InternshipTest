@@ -1,12 +1,10 @@
 package person;
 
-import java.util.ArrayList;
-
 import person.consciousness.Knowledge;
 
 public class Student {
 	String name;
-	ArrayList<Knowledge> skills=new ArrayList<Knowledge>();
+	Knowledge knowledge = new Knowledge();
 	public Student() {
         name ="None";
     }
@@ -20,10 +18,9 @@ public class Student {
         this.name = name;
     }
     public void setKnowledge(Knowledge knowledge) {
-    	skills.add(knowledge);
+    	this.knowledge.setLevel(knowledge.getLevel());
     }
     public void setKnowledge() {
-    	Knowledge knowledge = new Knowledge();
-    	skills.add(knowledge);
+    	this.knowledge.setLevel();
     }
 }

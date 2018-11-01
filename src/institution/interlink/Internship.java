@@ -20,15 +20,18 @@ public class Internship {
         this.name = name;
     }
     public void setStudent(Student student) {
+    	if (student!=null)
     	students.add(student);
     }
 
     public String getStudents() {
-    	String s = null;
+    	String s = "";
     	for(Student item: students){
+    		if (item!=null)
             s +=item.getName();
+    		s+="\n";
     	}
-    	if(s == null) s="none";
+    	if(s == "") s = "None";
         return s;
     }
 }

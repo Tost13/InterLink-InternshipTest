@@ -22,4 +22,8 @@ public class Student {
     public void setKnowledge(Knowledge knowledge) {
     	skills.add(knowledge);
     }
+    public void setKnowledge() {
+    	Knowledge knowledge = new Knowledge();
+    	skills.add(knowledge);
+    }
 }
